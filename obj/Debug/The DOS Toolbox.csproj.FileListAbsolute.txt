@@ -1,0 +1,14 @@
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\bin\Debug\The DOS Toolbox.exe.config
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\bin\Debug\The DOS Toolbox.exe
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\bin\Debug\The DOS Toolbox.pdb
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The DOS Toolbox.csprojAssemblyReference.cache
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The_DOS_Toolbox.AmplifiedUDP.resources
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The_DOS_Toolbox.Form1.resources
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The_DOS_Toolbox.Properties.Resources.resources
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The DOS Toolbox.csproj.GenerateResource.cache
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The DOS Toolbox.csproj.CoreCompileInputs.cache
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The DOS Toolbox.exe
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The DOS Toolbox.pdb
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The_DOS_Toolbox.UDP.resources
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The_DOS_Toolbox.Slowloris.resources
+C:\Users\stant\Documents\C# shit\The DOS Toolbox\obj\Debug\The_DOS_Toolbox.TCP.resources

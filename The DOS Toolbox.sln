@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The DOS Toolbox", "The DOS Toolbox.csproj", "{775C7D4A-8EE2-4740-AFB4-690D1089355D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{775C7D4A-8EE2-4740-AFB4-690D1089355D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775C7D4A-8EE2-4740-AFB4-690D1089355D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775C7D4A-8EE2-4740-AFB4-690D1089355D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775C7D4A-8EE2-4740-AFB4-690D1089355D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF7A162F-3E9D-43DB-93EE-07DA993AF67B}
+	EndGlobalSection
+EndGlobal

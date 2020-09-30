@@ -172,8 +172,7 @@ namespace The_DOS_Toolbox
             => System.Text.Encoding.ASCII.GetBytes(message);
         private string GetWebIP(string website)
         {
-            var url = website;
-            Uri myUri = new Uri(url);
+            Uri myUri = new Uri(website);
             var ip = Dns.GetHostAddresses(myUri.Host)[0];
             return Convert.ToString(ip);
         }

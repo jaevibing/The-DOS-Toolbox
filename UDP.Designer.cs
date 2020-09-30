@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -45,7 +44,6 @@
             this.messageTxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.intervalTxt = new System.Windows.Forms.TextBox();
-            this.floodTimer = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -215,10 +213,6 @@
             this.intervalTxt.TabIndex = 0;
             this.intervalTxt.Text = "1";
             // 
-            // floodTimer
-            // 
-            this.floodTimer.Tick += new System.EventHandler(this.floodTimer_Tick);
-            // 
             // UDP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +251,5 @@
         private System.Windows.Forms.TextBox messageTxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox intervalTxt;
-        private System.Windows.Forms.Timer floodTimer;
     }
 }

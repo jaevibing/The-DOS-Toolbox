@@ -5,11 +5,11 @@ This tool is intended for stress testing and educational purposes only. Any mali
 ## Features
 ### Implemented Features
 - UDP
-- TCP
-- Slowloris
+- TCP (needs to be updated)
+- Slowloris (needs to be updated)
 - Customizable settings
 ### Features not yet available
-- Proxy
+- Proxy (for TCP and Slowloris only)
 - Amplified DOS attacks
 - Viewable output
 - More coming soon!
